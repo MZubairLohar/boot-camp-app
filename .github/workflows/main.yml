@@ -40,4 +40,4 @@ jobs:
       uses: npm install -g surge
        
     - name: deploying on surge 
-      run: surge ./build http://trackerapp101.surge.sh/ --token ${{ serets.SURGE_TOKEN }}   
+      run: surge ./build http://trackerapp101.surge.sh/ --token ${{serets.SURGE_TOKEN}}   
