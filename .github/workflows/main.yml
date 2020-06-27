@@ -37,7 +37,7 @@ jobs:
       run: npm run build
          
     - name: installing surge
-      uses: npm install --global surge
+      run: npm install --global surge
        
     - name: deploying on surge 
       run: surge ./build http://trackerapp101.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
