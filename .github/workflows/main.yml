@@ -27,11 +27,11 @@ jobs:
       with: 
          version: 12
          
-    - name: NPM Publish
-      uses: JS-DevTools/npm-publish@v1.2
-      with:
-         #npm command
-         cmd: install
+    # - name: NPM Publish
+    #   uses: JS-DevTools/npm-publish@v2.1.0
+    #   with:
+    #      #npm command
+    #      cmd: install
     
     - name: Creating Build
       run: npm run build
