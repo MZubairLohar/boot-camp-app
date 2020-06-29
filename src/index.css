@@ -14,4 +14,10 @@ code {
 
 font{
   align-items: center;
+  color: aliceblue;
+}
+
+.font{
+  color: aliceblue;
+  text-align: center;
 }
