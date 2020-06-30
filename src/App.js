@@ -10,7 +10,7 @@ function App() {
     <div className="box">
         <div className={`box ${isMorning ? 'daylight' : ''}`}>
         
-        <h2 className="font"> time= { isMorning ? 'day' : 'night'} 
+        <h2 className="font"> Have a good { isMorning ? 'day' : 'night'} 
         </h2>
         </div>
      <h1 className="font"> change  in variable {count} </h1>
