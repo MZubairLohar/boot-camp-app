@@ -12,12 +12,19 @@ code {
     monospace;
 }
 
-font{
+/* font{
+  border: aliceblue;
   align-items: center;
   color: aliceblue;
-}
+} */
 
 .font{
+  border: 1px solid white;
   color: aliceblue;
   text-align: center;
+}
+
+button{
+  color: aliceblue;
+  margin-left: 50%;
 }

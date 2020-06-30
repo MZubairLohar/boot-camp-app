@@ -1,16 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import './Dinner';
-import Dinner from './Dinner';
+
 
 function App() {
+  let [count , setCount ] = useState(0);
+  let [isMorning, setMorning] = useState(true);
   return (
-    <div>
-
-     <h1 className="font">  Hello World + </h1>
-     <hr/>
-     <Dinner dishName="chicken karahi" sweetDish="pudding"/>
-    </div>
+    
+    <div className="box">
+        <div className={`box ${isMorning ? 'daylight' : ''}`}>
+        
+        <h2 className="font"> time= { isMorning ? 'day' : 'night'} 
+        </h2>
+        </div>
+     <h1 className="font"> change  in variable {count} </h1>
+     <br/>
+     <div className='button'>
+      <button onClick={()=> setCount(++count)} >Update</button>
+      <button onClick={() => setMorning(!isMorning)}> click me</button>
+      </div>
+   </div>
   );
 }
 
